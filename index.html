@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proposta: un tema nuovo per i siti</title>
+<meta name="description" content="Proposta economica per il nuovo template dei siti in una lingua: isoladilanzarote.com, isoladimaiorca.com, isoladifuerteventura.com, isoladiibiza.com, isoladiformentera.com, isoladimaltavacanze.com.">
+<meta name="robots" content="noindex">
+<style>
+  :root {
+    --inchiostro: #1d2430;
+    --grigio: #5b6472;
+    --linea: #d9dde3;
+    --fondo: #f4f6f8;
+    --blu: #0b4f8a;
+    --blu-chiaro: #e7f0f8;
+  }
+  * { box-sizing: border-box; }
+  html { font-size: 16px; }
+  body {
+    margin: 0;
+    color: var(--inchiostro);
+    background: #fff;
+    font-family: "Segoe UI", -apple-system, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.5;
+  }
+  .foglio { max-width: 820px; margin: 0 auto; padding: 48px 32px 64px; }
+  header { border-bottom: 3px solid var(--blu); padding-bottom: 20px; margin-bottom: 32px; }
+  .sopratitolo { color: var(--blu); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; font-size: .8rem; margin: 0 0 6px; }
+  h1 { font-size: 2rem; line-height: 1.15; margin: 0 0 14px; }
+  .meta { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px 24px; color: var(--grigio); font-size: .92rem; }
+  .meta b { display: block; color: var(--inchiostro); font-weight: 600; }
+  h2 { font-size: 1.3rem; margin: 36px 0 12px; padding-top: 6px; border-top: 1px solid var(--linea); }
+  h3 { font-size: 1.05rem; margin: 20px 0 8px; }
+  p { margin: 0 0 12px; }
+  ul { margin: 0 0 12px; padding-left: 22px; }
+  li { margin-bottom: 5px; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0 18px; font-size: .95rem; }
+  th, td { padding: 9px 10px; border-bottom: 1px solid var(--linea); text-align: left; vertical-align: top; }
+  th { background: var(--fondo); font-weight: 600; }
+  td.n, th.n { text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  tr.totale td { font-weight: 700; border-top: 2px solid var(--inchiostro); border-bottom: none; }
+  .pacchetti { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 16px 0 8px; }
+  .pacchetto { border: 1px solid var(--linea); border-radius: 8px; padding: 18px 16px; background: #fff; }
+  .pacchetto.scelto { border-color: var(--blu); background: var(--blu-chiaro); }
+  .pacchetto .nome { font-weight: 600; color: var(--grigio); font-size: .9rem; text-transform: uppercase; letter-spacing: .04em; }
+  .pacchetto .prezzo { font-size: 2rem; font-weight: 700; margin: 6px 0 2px; color: var(--blu); }
+  .pacchetto .sito { color: var(--grigio); font-size: .92rem; }
+  .pacchetto ul { margin-top: 10px; padding-left: 18px; font-size: .9rem; }
+  .riquadro { background: var(--fondo); border-left: 4px solid var(--blu); padding: 12px 16px; margin: 14px 0 18px; }
+  .due { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 28px; }
+  .due > div { background: var(--fondo); padding: 14px 16px; border-radius: 6px; }
+  .due h3 { margin-top: 0; }
+  footer { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--linea); color: var(--grigio); font-size: .88rem; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .firma { margin-top: 36px; display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+  .firma div { border-top: 1px solid var(--inchiostro); padding-top: 8px; font-size: .92rem; color: var(--grigio); }
+  @media (max-width: 640px) {
+    .foglio { padding: 28px 16px 48px; }
+    h1 { font-size: 1.6rem; }
+    .meta, .pacchetti, .due, .firma { grid-template-columns: 1fr; }
+  }
+  @media print {
+    @page { size: A4; margin: 16mm 14mm; }
+    html { font-size: 11.5pt; }
+    body { color: #000; }
+    .foglio { max-width: none; padding: 0; }
+    h2 { break-after: avoid; }
+    table, .pacchetto, .riquadro, .due > div { break-inside: avoid; }
+    .pacchetti { break-inside: avoid; }
+    a { color: inherit; text-decoration: none; }
+    .pacchetto.scelto { background: #eef3f8; }
+    th { background: #eee; }
+  }
+</style>
+</head>
+<body>
+<div class="foglio">
+
+<header>
+  <p class="sopratitolo">Proposta</p>
+  <h1>Un tema nuovo per i siti, scritto da zero</h1>
+  <div class="meta">
+    <div><b>Per</b> Alessandro Castagna</div>
+    <div><b>Da</b> Domenico Tatone</div>
+    <div><b>Data</b> 9 ottobre 2026</div>
+  </div>
+</header>
+
+<h2>Di cosa si tratta</h2>
+<p>I siti usano ancora il tema fatto su misura anni fa, fermo da allora: funziona, ma è pesante sui telefoni, da cui arriva la gran parte delle visite, e nessuno lo aggiorna più. La proposta è sostituirlo con <strong>un tema nuovo scritto da zero</strong>: leggero, veloce, pensato prima per il telefono, senza page builder né licenze, con il codice di tua proprietà.</p>
+<p>Si parte dai <strong>siti in una lingua sola</strong>. I siti in più lingue avranno una proposta a parte.</p>
+
+<div class="riquadro">
+  <strong>Niente cambia per Google e per chi legge.</strong> Gli indirizzi delle pagine restano identici, i contenuti e le foto restano dove sono, l'hosting resta Aruba. Cambia solo il vestito del sito.
+</div>
+
+<h2>Perché non un page builder</h2>
+<div class="due">
+  <div>
+    <h3>Con Elementor o simili</h3>
+    <ul>
+      <li>Pagine pesanti e lente sui telefoni, con punteggi Google più bassi</li>
+      <li>Licenza annuale e dipendenza dal plugin: se cambia, il sito si rompe</li>
+      <li>Per cambiare aspetto tra due anni si rifà tutto</li>
+    </ul>
+  </div>
+  <div>
+    <h3>Con un tema scritto da zero</h3>
+    <ul>
+      <li>Pagine leggere e veloci, foto ottimizzate</li>
+      <li>Nessuna licenza, nessun fornitore da cui dipendere</li>
+      <li>Il codice è tuo: qualsiasi programmatore può intervenire</li>
+    </ul>
+  </div>
+</div>
+
+<h2>Un tema per ogni sito</h2>
+<p>Ogni sito avrà il suo tema, con il suo aspetto, la sua home e le sue pagine. Sotto, una base comune che si occupa delle cose uguali per tutti i siti: foto, gallerie, pulsanti di prenotazione, velocità. L'aspetto di un sito non tocca gli altri. Per questo il primo sito costa di più e i successivi meno.</p>
+
+<h2>Ore e prezzi</h2>
+<p>Il primo sito include la base comune.</p>
+<table>
+  <thead>
+    <tr><th>Fase</th><th class="n">Primo sito</th><th class="n">Prezzo</th><th class="n">Ogni sito successivo</th><th class="n">Prezzo</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Analisi del sito</td><td class="n">10 h</td><td class="n">150 €</td><td class="n">6 h</td><td class="n">100 €</td></tr>
+    <tr><td>Design</td><td class="n">20 h</td><td class="n">310 €</td><td class="n">12 h</td><td class="n">210 €</td></tr>
+    <tr><td>Base comune</td><td class="n">40 h</td><td class="n">620 €</td><td class="n">–</td><td class="n">–</td></tr>
+    <tr><td>Tema del sito</td><td class="n">30 h</td><td class="n">460 €</td><td class="n">20 h</td><td class="n">350 €</td></tr>
+    <tr><td>Prove su una copia del sito</td><td class="n">15 h</td><td class="n">230 €</td><td class="n">10 h</td><td class="n">170 €</td></tr>
+    <tr><td>Messa in linea e un mese di assistenza</td><td class="n">15 h</td><td class="n">230 €</td><td class="n">10 h</td><td class="n">170 €</td></tr>
+    <tr class="totale"><td>Totale</td><td class="n">130 h</td><td class="n">2.000 €</td><td class="n">58 h</td><td class="n">1.000 €</td></tr>
+  </tbody>
+</table>
+
+<h2>I pacchetti</h2>
+<div class="pacchetti">
+  <div class="pacchetto">
+    <div class="nome">1 sito</div>
+    <div class="prezzo">2.000 €</div>
+    <div class="sito">130 ore</div>
+    <ul>
+      <li>Base comune + tema del sito</li>
+      <li>Tutte le fasi</li>
+      <li>Un mese di assistenza</li>
+    </ul>
+  </div>
+  <div class="pacchetto scelto">
+    <div class="nome">3 siti</div>
+    <div class="prezzo">4.000 €</div>
+    <div class="sito">246 ore · 1.333 € a sito</div>
+    <ul>
+      <li>Base comune + tre temi</li>
+      <li>Tutte le fasi per ogni sito</li>
+      <li>Un mese di assistenza per sito</li>
+    </ul>
+  </div>
+  <div class="pacchetto">
+    <div class="nome">5 siti</div>
+    <div class="prezzo">6.000 €</div>
+    <div class="sito">362 ore · 1.200 € a sito</div>
+    <ul>
+      <li>Base comune + cinque temi</li>
+      <li>Tutte le fasi per ogni sito</li>
+      <li>Un mese di assistenza per sito</li>
+    </ul>
+  </div>
+</div>
+<p style="color: var(--grigio); font-size: .9rem;">I pacchetti sono la somma dei siti: il primo 2.000 euro, ogni sito successivo 1.000. Il sesto sito in una lingua, se si vuole, costa come un sito successivo: 1.000 euro.</p>
+
+<h2>Cosa comprende e cosa no</h2>
+<div class="due">
+  <div>
+    <h3>Compreso</h3>
+    <ul>
+      <li>Tema scritto da zero, senza page builder né licenze</li>
+      <li>Codice di tua proprietà, consegnato con la documentazione</li>
+      <li>Indirizzi, contenuti, foto e hosting come sono: nessuna perdita di posizionamento prevista</li>
+      <li>Prove su una copia del sito prima della messa in linea</li>
+      <li>Un mese di assistenza e correzioni dopo la messa in linea</li>
+    </ul>
+  </div>
+  <div>
+    <h3>Non compreso</h3>
+    <ul>
+      <li>Hosting e dominio (restano su Aruba, a tuo nome)</li>
+      <li>Testi e foto nuove</li>
+      <li>I siti in più lingue ed easymenorca.info: proposta a parte</li>
+      <li>Manutenzione e modifiche dopo il primo mese</li>
+    </ul>
+  </div>
+</div>
+
+<h2>Tempi</h2>
+<p>Il primo sito in <strong>tre o quattro settimane</strong> dall'avvio; ogni sito successivo in una o due settimane. I cinque siti in circa tre mesi. L'ordine lo scegliamo insieme; proporrei di partire da isoladilanzarote.com, il più piccolo, e di passare agli altri quando il primo è online.</p>
+
+<div class="firma">
+  <div>Domenico Tatone</div>
+  <div>Per accettazione, Alessandro Castagna</div>
+</div>
+
+<footer>
+  <span>Proposta: un tema nuovo per i siti · 9 ottobre 2026</span>
+  <span>Domenico Tatone</span>
+</footer>
+
+</div>
+</body>
+</html>
